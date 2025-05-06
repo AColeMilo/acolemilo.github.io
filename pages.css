@@ -51,18 +51,17 @@ header {
   margin-left: 50px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* Screen accessibility */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+
 }
 
-/* Page content */
+/* rest of page content */
 main {
-  /* Same as the width of the sidenav */
   text-align:center;
 }
-
 
 .img1{
 
@@ -135,7 +134,8 @@ h2, h3{
   max-width: 300px; 
   margin: auto; 
   overflow: hidden; 
-text-align: right;
+  text-align: right;
+  align-self: right;
 
 } 
 
@@ -156,14 +156,6 @@ form{
   margin-left: 350px;
   text-align: left;
 }
-
-
-
-
-
-
-
-
 
 footer {
   background-color: #333;

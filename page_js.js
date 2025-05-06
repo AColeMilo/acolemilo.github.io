@@ -1,3 +1,4 @@
+//slideshow images
 const images = [
 	'page_images/all1.jpg',
 	'page_images/lucy1.jpg',
@@ -23,7 +24,7 @@ const images = [
 ];
 
 let currentIndex = 0; 
- 
+//slideshow function
 function changeImage() { 
     const img1_1 = document.getElementById('img1_1'); 
     currentIndex = (currentIndex + 1) % images.length; 
@@ -36,23 +37,19 @@ function changeImage() {
  
 setInterval(changeImage, 5000); 
 
-/* Set the width of the side navigation to 250px */
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+/* Set the width of the side navigation to 150px and the left margin of the page content to 150px and add a black background color to body */
 function openNav() {
     document.getElementById("mySidenav").style.width = "150px";
     document.getElementById("main").style.marginLeft = "150px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-  }
+}
   
-  /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "white";
-  }
-
-
-
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
